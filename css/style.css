@@ -1,0 +1,81 @@
+body, html
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body
+{
+	background: url(../images/navy_blue.png);
+}
+
+*
+{
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	font-size: 10pt;
+}
+
+a:hover,
+a:hover small,
+a:hover small span
+{
+	color: #6D87D6;
+}
+
+a,
+a:hover,
+a:active,
+a:focus
+{
+    text-decoration: none; 
+}
+
+.container-main
+{
+    width: 550px;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    margin-left: -275px;
+    margin-top: -200px;
+}
+
+h1
+{
+	font-size: 21pt;
+    font-weight: 700;
+    color: #FF7A00;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+h2
+{
+	margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 13pt;
+}
+
+h3
+{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 10pt;
+    color: #777;
+}
+
+.wrapper
+{
+	margin: 5%;
+    padding: 2% 5%;
+    background-color: white;
+    text-align: center;
+}
+
+.social i
+{
+    padding: 3px;
+}
