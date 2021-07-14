@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+    body {
+        @apply text-black text-2xl leading-9;
+    }
+
+    a {
+        @apply border-b-2 border-orange hover:text-orange;
+    }
+
     @font-face {
         font-family: 'Noto Serif';
         src: local('Noto Serif'), local('NotoSerif'),
@@ -11,5 +19,17 @@
         font-weight: normal;
         font-style: normal;
         font-display: swap;
+    }
+
+    h1, h2 {
+        @apply text-blue-100
+    }
+
+    h2 {
+        @apply text-3xl my-4;
+    }
+
+    ul {
+        @apply list-disc list-inside ml-4;
     }
 }
