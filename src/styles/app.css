@@ -22,14 +22,14 @@
     }
 
     h1, h2 {
-        @apply text-blue-100
+        @apply text-blue-100 dark:text-blue-500
+    }
+
+    h1 {
+        @apply font-serif font-bold text-6xl mb-3;
     }
 
     h2 {
         @apply text-3xl my-4;
-    }
-
-    ul {
-        @apply list-disc list-inside ml-4;
     }
 }
