@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import About from "@/components/About.vue";
 import Projects from "@/components/Projects.vue";
+import Imprint from "@/components/Imprint.vue";
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/projects",
     name: "Projects",
     component: Projects,
+  },
+  {
+    path: "/imprint",
+    name: "Imprint",
+    component: Imprint,
   },
 ];
 

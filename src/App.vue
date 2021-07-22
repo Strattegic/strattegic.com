@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col h-screen justify-between bg-white dark:bg-gray-800 dark:text-white">
-    <div class="container mx-auto my-8 lg:w-9/12">
+  <div class="flex flex-col min-h-screen justify-between bg-white dark:bg-gray-800 dark:text-white">
+    <div class="container mx-auto mt-14 lg:w-9/12">
       <header class="flex items-end">
         <span class="mr-5 bg-blue-100 p-2 text-white">STR</span>
         <nav class="text-3xl mb-1">
@@ -8,7 +8,7 @@
           <router-link to="/projects" class="mx-5">projects.</router-link>
         </nav>
       </header>
-      <div class="mt-32">
+      <div class="flex-grow my-24">
         <router-view />
       </div>
     </div>
@@ -23,6 +23,9 @@
             <CompanyIcon type="linkedin" />
           </a>
         </div>
+      </div>
+      <div class="container mx-auto mt-2 mb-4 text-center text-sm">
+        <router-link to="/imprint" class="border-0">Imprint</router-link>
       </div>
     </footer>
   </div>
@@ -61,16 +64,5 @@ export default defineComponent({
 </script>
 
 <style lang="postcss">
-  .dev-item::before {
-    content: "▹";
-    @apply text-xl leading-6 text-orange mr-1;
-  }
 
-  .dev-item {
-    @apply text-lg leading-8
-  }
-
-  ul {
-    @apply list-none m-0
-  }
 </style>

@@ -5,20 +5,22 @@
       <div class="flex flex-col ml-8">
         <h1>Moin, I'm Mathias!</h1>
         <p class="text-2xl leading-loose">
-          I'm a Senior Fullstack Software Developer from Hamburg, Germany.
+          I'm a Senior Fullstack Software Developer from Hamburg, Germany. <br>
           I love solving problems and working with people to do that. <br />
         </p>
       </div>
     </div>
     <div>
-      <div v-for="category of Object.keys(skills)" v-bind:key="category">
-        <h2 class="mt-20 mb-6 text-3xl">{{category}}</h2>
+      <h2>Some of the things I work with</h2>
+      <div v-for="category of Object.keys(skills)" v-bind:key="category" class="mt-8">
         <div class="flex flex-row justify-start">
-          <div v-for="skill of skills[category]" v-bind:key="skill.name" class="flex flex-row items-center text-3xl">
-            <img v-if="skill.img" :src="'assets/skills/' + skill.img" alt="" class="mr-2 max-w-12 max-h-12">
+          <div v-for="(skill, index) of skills[category]" v-bind:key="skill.name" class="flex flex-row items-center justify-start text-3xl ">
+            <img v-if="skill.img" :src="'assets/skills/' + skill.img" alt="" class="inline-block mr-2 w-6 max-h-6">
             <div class="inline-block">{{ skill.name }}</div>
+            <div v-if="index < skills[category].length - 1" class="mx-3 text-blue-100">•</div>
           </div>
         </div>
+        <h3 class="mt-0 text-base inline-block">{{category}}</h3>
       </div>
     </div>
   </div>
@@ -35,6 +37,7 @@
           backend: [
             { name: 'Typescript', img: 'typescript.png' },
             { name: 'Node.js', img: 'nodejs.png' },
+            { name: 'Java', img: 'java.png' },
             { name: 'serverless', img: 'serverless.svg' },
             { name: 'AWS', img: 'aws.jpg' },
           ],
@@ -43,6 +46,7 @@
             { name: 'HTML5', img: 'html5.png' },
             { name: 'CSS3', img: 'css3.png' },
             { name: 'SASS', img: 'sass.png' },
+            { name: 'Tailwind', img: 'tailwind.svg' },
             { name: 'Bootstrap', img: 'bootstrap.png' },
           ],
           tools: [
