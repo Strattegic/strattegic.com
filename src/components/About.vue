@@ -13,14 +13,14 @@
     <div>
       <h2>Some of the things I work with</h2>
       <div v-for="category of Object.keys(skills)" v-bind:key="category" class="mt-8">
+        <h3 class="mt-0 text-base inline-block">{{category}}</h3>
         <div class="flex flex-row justify-start">
           <div v-for="(skill, index) of skills[category]" v-bind:key="skill.name" class="flex flex-row items-center justify-start text-3xl ">
-            <img v-if="skill.img" :src="'assets/skills/' + skill.img" alt="" class="inline-block mr-2 w-6 max-h-6">
+<!--            <img v-if="skill.img" :src="'assets/skills/' + skill.img" alt="" class="inline-block mr-2 w-6 max-h-6">-->
             <div class="inline-block">{{ skill.name }}</div>
             <div v-if="index < skills[category].length - 1" class="mx-3 text-blue-100">•</div>
           </div>
         </div>
-        <h3 class="mt-0 text-base inline-block">{{category}}</h3>
       </div>
     </div>
   </div>
@@ -34,14 +34,14 @@
     data: () => {
       return {
         skills: {
-          backend: [
+          Backend: [
             { name: 'Typescript', img: 'typescript.png' },
             { name: 'Node.js', img: 'nodejs.png' },
             { name: 'Java', img: 'java.png' },
             { name: 'serverless', img: 'serverless.svg' },
             { name: 'AWS', img: 'aws.jpg' },
           ],
-          frontend: [
+          Frontend: [
             { name: 'Vue.js', img: 'vuejs.svg' },
             { name: 'HTML5', img: 'html5.png' },
             { name: 'CSS3', img: 'css3.png' },
@@ -49,12 +49,12 @@
             { name: 'Tailwind', img: 'tailwind.svg' },
             { name: 'Bootstrap', img: 'bootstrap.png' },
           ],
-          tools: [
+          Tools: [
             { name: 'IntelliJ', img: 'intellij.svg' },
             { name: 'Postman', img: 'postman.svg' },
             { name: 'Github', img: 'github.png' },
           ],
-          practices: [
+          Practices: [
             { name: 'TDD' },
             { name: 'Serverless' },
             { name: 'CI / CD' },

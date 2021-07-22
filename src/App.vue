@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-screen justify-between bg-white dark:bg-gray-800 dark:text-white">
     <div class="container mx-auto mt-14 lg:w-9/12">
       <header class="flex items-end">
-        <span class="mr-5 bg-blue-100 p-2 text-white">STR</span>
+        <span class="mr-5 bg-blue-100 p-2 text-white"><router-link to="/" class="border-0">STR</router-link></span>
         <nav class="text-3xl mb-1">
           <router-link to="/" class="mx-5">about.</router-link>
           <router-link to="/projects" class="mx-5">projects.</router-link>
